@@ -7,7 +7,7 @@ turbo.nominatim = function() {
 
   function request(search, callback) {
     // ajax (GET) request to nominatim
-    $.ajax("http://nominatim.openstreetmap.org/search"+"?X-Requested-With="+configs.appname, {
+    $.ajax("https://nominatim.openstreetmap.org/search"+"?X-Requested-With="+configs.appname, {
       data:{
         format:"json",
         q: search
@@ -24,7 +24,7 @@ turbo.nominatim = function() {
       },
       error: function() {
         var err = "An error occured while contacting the osm search server nominatim.openstreetmap.org :(";
-        concole.log(err);
+        console.log(err);
         callback(err,null);
       },
     });

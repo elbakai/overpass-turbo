@@ -281,6 +281,9 @@
     "name": "Restaurant",
     "terms": "Restaurant, Lloc per menjar, Bistro, Wok, Trattoria, Pizzeria"
   },
+  "amenity/sanitary_dump_station": {
+    "name": "Estació de buidatge de lavabos"
+  },
   "amenity/school": {
     "name": "Escola",
     "terms": "Escola, CEIP, IES, Col·legi, Institut, Centre educatiu, Guarderia"
@@ -946,9 +949,18 @@
   "landuse/churchyard": {
     "name": "Terrenys d'església"
   },
+  "landuse/commercial": {
+    "name": "Zona Comercial"
+  },
   "landuse/construction": {
     "name": "Zona en construcció",
     "terms": "En construcció"
+  },
+  "landuse/farm": {
+    "name": "Zona Agrícola"
+  },
+  "landuse/farmland": {
+    "name": "Zona Agrícola"
   },
   "landuse/farmyard": {
     "name": "Edificis de Granja",
@@ -965,12 +977,18 @@
     "name": "Herba",
     "terms": "Herba,Gespa"
   },
+  "landuse/industrial": {
+    "name": "Zona Industrial"
+  },
   "landuse/landfill": {
     "name": "Abocador"
   },
   "landuse/meadow": {
     "name": "Prat",
     "terms": "Prat,Prada,Natural"
+  },
+  "landuse/military": {
+    "name": "Zona Militar"
   },
   "landuse/orchard": {
     "name": "Verger",
@@ -979,6 +997,12 @@
   "landuse/quarry": {
     "name": "Mina a cel obert",
     "terms": "Pedrera"
+  },
+  "landuse/residential": {
+    "name": "Zona Residencial"
+  },
+  "landuse/retail": {
+    "name": "Zona de Comerç minorista"
   },
   "landuse/vineyard": {
     "name": "Vinya",
@@ -1106,8 +1130,14 @@
     "name": "Far",
     "terms": "Far"
   },
+  "man_made/mast": {
+    "name": "Torre de ràdio"
+  },
   "man_made/observation": {
     "name": "Torre de vigilància"
+  },
+  "man_made/petroleum_well": {
+    "name": "Pou petrolífer"
   },
   "man_made/pier": {
     "name": "Moll de pilons",
@@ -1116,6 +1146,12 @@
   "man_made/pipeline": {
     "name": "Canonada",
     "terms": "Gàseoducte,Oleoducte,Canonades"
+  },
+  "man_made/silo": {
+    "name": "Sitja"
+  },
+  "man_made/storage_tank": {
+    "name": "Dipòsit d'emmagatzematge"
   },
   "man_made/survey_point": {
     "name": "Punt referencial",
@@ -1302,6 +1338,9 @@
     "name": "Ciutat ",
     "terms": "Ciutat, Municipi"
   },
+  "place/farm": {
+    "name": "Granja"
+  },
   "place/hamlet": {
     "name": "Llogaret"
   },
@@ -1419,6 +1458,9 @@
   "relation": {
     "name": "Relació",
     "terms": "Relació"
+  },
+  "roundabout": {
+    "name": "Rotonda"
   },
   "route/ferry": {
     "name": "Ruta de ferri"
@@ -1617,6 +1659,9 @@
   },
   "shop/hifi": {
     "name": "Botiga d'alta fidelitat"
+  },
+  "shop/houseware": {
+    "name": "Botiga de la llar"
   },
   "shop/interior_decoration": {
     "name": "Botiga d'Interiorisme"
@@ -1962,6 +2007,9 @@
     "name": "Torrent",
     "terms": "Torrentera, Rambla"
   },
+  "waterway/fuel": {
+    "name": "Benzinera per a embarcacions"
+  },
   "waterway/river": {
     "name": "Riu",
     "terms": "Riu"
@@ -1969,6 +2017,9 @@
   "waterway/riverbank": {
     "name": "Banc fluvial",
     "terms": "Riba del riu, Ribera"
+  },
+  "waterway/sanitary_dump_station": {
+    "name": "Lavabo per a vaixells"
   },
   "waterway/stream": {
     "name": "Rierol",

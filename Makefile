@@ -93,8 +93,11 @@ turbo.map.js: \
 	js/jsmapcss/StyleList.js \
 	js/jsmapcss/RuleSet.js \
 	libs/osmtogeojson/osmtogeojson.js \
+	js/GeoJsonNoVanish.js \
 	js/OSM4Leaflet.js \
+	js/configs.js \
 	js/overpass.js \
+	js/query.js \
 	js/map.js
 
 turbo.map.js: Makefile
@@ -166,7 +169,7 @@ presets:
 ffs:
 	$(PEGJS) -o size -e turbo.ffs.parser < misc/ffs.pegjs > js/ffs/parser.js
 
-icons: icons-maki icons-mapnik
+icons: icons-maki icons-mapnik icons-osmic
 
 icons-maki:
 	wget https://github.com/mapbox/maki/zipball/mb-pages -O icons/maki.zip
@@ -178,5 +181,15 @@ icons-mapnik:
 	yes | unzip -ju icons/mapnik.zip */symbols/*.png -d icons/mapnik/
 	rm icons/mapnik.zip
 
+icons-osmic:
+	git clone --depth 1 https://github.com/nebulon42/osmic.git
+	./osmic/tools/export.py --basedir osmic/ osmic/tools/config/overpass-turbo-png.yaml
+	optipng -o 2 osmic/export/*
+	cp osmic/export/* icons/osmic/
+	rm -rf osmic
+
 osmtogeojson:
 	wget https://github.com/tyrasd/osmtogeojson/raw/gh-pages/osmtogeojson.js -O libs/osmtogeojson/osmtogeojson.js -O libs/osmtogeojson/osmtogeojson.js
+
+overpass-turbo-ffs.js: js/ffs.js js/ffs/free.js js/ffs/parser.js
+	cat $^ > $@

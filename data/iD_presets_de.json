@@ -89,7 +89,7 @@
   },
   "amenity/atm": {
     "name": "Geldautomat",
-    "terms": "Geldautomat"
+    "terms": "Geldautomat,Bankautomat,Bankomat,Bancomat,Geldausgabeautomat,ATM"
   },
   "amenity/bank": {
     "name": "Bank (Geldinstitut)",
@@ -118,6 +118,9 @@
   "amenity/bicycle_repair_station": {
     "name": "Fahrradreperaturstation",
     "terms": "Fahrradreperaturstation, Fahrradreperaturbox"
+  },
+  "amenity/biergarten": {
+    "name": "Biergarten"
   },
   "amenity/boat_rental": {
     "name": "Bootvermietung",
@@ -232,7 +235,7 @@
     "terms": "Krankenhaus, Klinik, Klinikgelände, Hospital"
   },
   "amenity/kindergarten": {
-    "name": "Vorschul-/Kindergartengelände",
+    "name": "Kindergarten",
     "terms": "Kindergartengeläde,Kinderkrippengelände"
   },
   "amenity/library": {
@@ -536,7 +539,7 @@
     "terms": "Hotelgebäude"
   },
   "building/house": {
-    "name": "Haus",
+    "name": "Einfamilienhaus",
     "terms": "Haus"
   },
   "building/hut": {
@@ -1232,8 +1235,8 @@
     "terms": "Gleitbahn, Rampe"
   },
   "leisure/sports_center": {
-    "name": "Fitnessstudio",
-    "terms": "Fitnessstudio, Sportstudio, Trainingszentrum"
+    "name": "Sportzentrum",
+    "terms": "Fitnessstudio, Sportstudio, Trainingszentrum, Aerobicstudio, Sporthalle"
   },
   "leisure/stadium": {
     "name": "Stadion",
@@ -1279,6 +1282,10 @@
     "name": "Aussichtsturm",
     "terms": "Ausguck, Ausblick, Beobachtungsstand"
   },
+  "man_made/petroleum_well": {
+    "name": "Erdölpumpe",
+    "terms": "Tiefpumpe"
+  },
   "man_made/pier": {
     "name": "Steg",
     "terms": "Anleger, Pier"
@@ -1286,6 +1293,12 @@
   "man_made/pipeline": {
     "name": "Pipeline",
     "terms": "Pipeline, Rohrleitung"
+  },
+  "man_made/silo": {
+    "name": "Silo"
+  },
+  "man_made/storage_tank": {
+    "name": "Lagertank"
   },
   "man_made/survey_point": {
     "name": "Vermessungspunkt",
@@ -1507,6 +1520,9 @@
     "name": "Großstadt",
     "terms": "Stadt"
   },
+  "place/farm": {
+    "name": "Bauernhof"
+  },
   "place/hamlet": {
     "name": "Siedlung",
     "terms": "Weiler, kleines Dorf"
@@ -1646,6 +1662,10 @@
   "relation": {
     "name": "Relation",
     "terms": "Relation, Beziehung, Verbindung"
+  },
+  "roundabout": {
+    "name": "Kreisverkehr",
+    "terms": "Kreisverkehr, Kreisel, Rondell, Verkehrskreisel"
   },
   "route/ferry": {
     "name": "Fährenroute",
@@ -2280,8 +2300,8 @@
     "terms": "Kanal"
   },
   "waterway/dam": {
-    "name": "Damm",
-    "terms": "Staudamm, Staumauer"
+    "name": "Staudamm",
+    "terms": "Damm, Staumauer"
   },
   "waterway/ditch": {
     "name": "Graben",
